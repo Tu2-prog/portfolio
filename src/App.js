@@ -41,16 +41,6 @@ function App() {
                 {element.location}
               </h5>
               <p id="description">{element.description}</p>
-              {showButton && (
-                <a
-                  className={`button ${
-                    isWorkIcon ? "workButton" : "schoolButton"
-                  }`}
-                  href="/"
-                >
-                  {element.buttonText}
-                </a>
-              )}
             </VerticalTimelineElement>
           );
         })}
