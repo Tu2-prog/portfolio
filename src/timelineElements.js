@@ -1,37 +1,26 @@
 let timelineElements = [
 {
   id: 1,
-  title: "Frontend Developer",
-  location: "Dragontail, Ascana",
+  title: "Personal Projects",
   description:
-    "Converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.",
-  buttonText: "View Frontend Projects",
-  date: "August 2016 - present",
+    "During my university years I have started some own projects in order to practice different technologies i.e. web development, data science and more.",
+  buttonText: "View Backend Projects",
+  date: "Present",
   icon: "work",
 },
 {
   id: 2,
-  title: "Backend Developer",
-  location: "Skystead, Craonia",
+  title: "Beginner Practical: Web Crawling of App Store Reviews",
+  location: "Heidelberg, Germany",
   description:
-    "Working hand-in-hand with front-end developers by providing the outward facing web application elements server-side logic. Creating the logic to make the web app function properly, and accomplishing this through the use of server-side scripting languages.",
-  buttonText: "View Backend Projects",
-  date: "June 2013 - August 2016",
+    "Programming a Web Crawler that is capable of crawling reviews from the Google Play Store in order to provide them for further analysis to support Requirements Engineering tasks.",
+  buttonText: "Company Website",
+  date: "September 2022 - March 2023",
   icon: "work",
 },
 {
   id: 3,
-  title: "Quality Assurance Engineer",
-  location: "South Warren, Geshington",
-  description:
-    "Assessing the quality of specifications and technical design documents in order to ensure timely, relevant and meaningful feedback.",
-  buttonText: "Company Website",
-  date: "September 2011 - June 2013",
-  icon: "work",
-},
-{
-  id: 4,
-  title: "Oak Ridge College",
+  title: "University Heidelberg",
   location: "South Warren, Geshington",
   description:
     "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
@@ -40,7 +29,7 @@ let timelineElements = [
   icon: "school",
 },
 {
-  id: 5,
+  id: 4,
   title: "Hawking College",
   location: "Skystead, Craonia",
   description:
@@ -50,7 +39,7 @@ let timelineElements = [
   icon: "school",
 },
 {
-  id: 6,
+  id: 5,
   title: "Marble Hills Grammar School",
   location: "Dragontail, Ascana",
   description:
