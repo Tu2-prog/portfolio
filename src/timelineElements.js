@@ -23,30 +23,21 @@ let timelineElements = [
   title: "University Heidelberg",
   location: "South Warren, Geshington",
   description:
-    "Online Course in Magical Beasts and Wonders of the World - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+    "Attending university for the Bachelor of Science degree for Computer Science in Heidelberg.",
   buttonText: "Course Certificate",
   date: "September 2011",
   icon: "school",
 },
 {
   id: 4,
-  title: "Hawking College",
-  location: "Skystead, Craonia",
+  title: "Highschool - Elly Heuss Knapp Gymnasium",
+  location: "Heilbronn, Germany",
   description:
-    "College - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
+    "Graduated Highschool and obtaining Abitur in 2020 with the mark 1.6",
   buttonText: "College Projects",
-  date: "2007 - 2011",
+  date: "2012 - 2020",
   icon: "school",
-},
-{
-  id: 5,
-  title: "Marble Hills Grammar School",
-  location: "Dragontail, Ascana",
-  description:
-    "Highschool - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque sagittis tellus, non ultrices lacus tempus vel.",
-  date: "2003 - 2007",
-  icon: "school",
-},
+}
 ];
   
 export default timelineElements;
