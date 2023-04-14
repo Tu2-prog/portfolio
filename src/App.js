@@ -8,8 +8,7 @@ export default function App(){
   <div className="App">
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<TimeLine />}></Route>
-        <Route path="/home" element={<Home />}></Route>
+        <Route path="/" element={<Home />}></Route>
         <Route path="timeline" element={<TimeLine/>}></Route>
       </Routes>
     </BrowserRouter>

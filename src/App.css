@@ -19,9 +19,21 @@ body {
 
 
 .title {
-  font-size: 15em;
+  font-size: 5em;
   text-align: center;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Poppins";
+}
+
+.text{
+  font-size: 3em;
+  font-family: "Poppins";
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.positioning{
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 h3 {

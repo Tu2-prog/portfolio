@@ -21,7 +21,7 @@ let timelineElements = [
 {
   id: 3,
   title: "University Heidelberg",
-  location: "South Warren, Geshington",
+  location: "Heidelberg, Germany",
   description:
     "Attending university for the Bachelor of Science degree for Computer Science in Heidelberg.",
   buttonText: "Course Certificate",

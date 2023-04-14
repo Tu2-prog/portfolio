@@ -1,21 +1,30 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { NavBar } from "./components/NavBar";
+import BasicExample from "./components/Card";
+
+import productsElements from "../productsElements";
 
 export const Home = () => {
-    const navigate = useNavigate();
     return (
+        <>
+        <NavBar></NavBar>
         <div>
-        <h1>I am the home</h1>
-        <ul>
-            <li>
-            <Link to="/">Go to product my personal timeline (normal link)</Link>
-            </li>
-            <li>
-            <button onClick={() => navigate("/product/3")}>
-                Go to product 3 (history.push)
-            </button>
-            </li>
-        </ul>
-    </div>
+        <h1 className="title">Home</h1>
+        <p className="text">
+            Hi,<br/> I am Tu. I am an university student in Heidelberg, currently aiming for a degree in Computer Science. This is a display of my works during my leisure in order to practice and deepen my skills. 
+            <br/> <br/> My projects:
+        </p>
+        <div style={{display:'flex'}}>
+            {productsElements.map((product) => (
+                <BasicExample 
+                    key={product.id}
+                    title={product.title}
+                    description={product.description}
+                    buttonText={product.buttonText}
+                />
+            ))}
+        </div>
+        </div>
+        </>
     );
 }
