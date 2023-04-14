@@ -1,5 +1,6 @@
 import { ReactComponent as WorkIcon } from "../work.svg";
 import { ReactComponent as SchoolIcon } from "../school.svg";
+import { NavBar } from "./components/NavBar";
 
 import timelineElements from "../timelineElements";
 
@@ -11,40 +12,44 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 export const TimeLine = () => {
-    let workIconStyles = { background: "#06D6A0" };
-    let schoolIconStyles = { background: "#f9c74f" };
+  let workIconStyles = { background: "#06D6A0" };
+  let schoolIconStyles = { background: "#f9c74f" };
 
-    return (
-        <div>
+  return (
+    <>
+    <NavBar />
+    <div>
+      <div>
         <h1 className="title">Portfolio</h1>
         <VerticalTimeline>
-            {timelineElements.map((element) => {
+          {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";
-            let showButton =
-                element.buttonText !== undefined &&
-                element.buttonText !== null &&
-                element.buttonText !== "";
+            // let showButton =
+            //     element.buttonText !== undefined &&
+            //     element.buttonText !== null &&
+            //     element.buttonText !== "";
 
             return (
-                <VerticalTimelineElement
+              <VerticalTimelineElement
                 key={element.key}
                 date={element.date}
                 dateClassName="date"
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                 icon={isWorkIcon ? <WorkIcon /> : <SchoolIcon />}
-                >
+              >
                 <h3 className="vertical-timeline-element-title">
-                    {element.title}
+                  {element.title}
                 </h3>
                 <h5 className="vertical-timeline-element-subtitle">
-                    {element.location}
+                  {element.location}
                 </h5>
                 <p id="description">{element.description}</p>
-                </VerticalTimelineElement>
+              </VerticalTimelineElement>
             );
-            })}
+          })}
         </VerticalTimeline>
-        </div>
-    );
-}
-
+      </div>
+    </div>
+    </>
+  );
+};
