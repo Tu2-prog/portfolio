@@ -27,13 +27,20 @@ body {
 .text{
   font-size: 3em;
   font-family: "Poppins";
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
-.positioning{
-  padding-left: 5%;
-  padding-right: 5%;
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  padding-left: 220px;
+}
+
+.grid-item{
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -59,6 +66,10 @@ h3 {
   padding: 0.5em 1em;
   border-radius: 5px;
   color: white;
+}
+
+.footer{
+  margin-top: 5%;
 }
 
 .workButton {
