@@ -1,6 +1,7 @@
 import { ReactComponent as WorkIcon } from "../work.svg";
 import { ReactComponent as SchoolIcon } from "../school.svg";
 import { NavBar } from "./components/NavBar";
+import Footer from "./components/Footer";
 
 import timelineElements from "../timelineElements";
 
@@ -50,6 +51,7 @@ export const TimeLine = () => {
         </VerticalTimeline>
       </div>
     </div>
+    <Footer/>
     </>
   );
 };

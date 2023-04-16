@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { FaTablet, FaMailBulk } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -22,8 +23,8 @@ const Footer = () => {
           <Col md={3}>
             <h5 style={{marginTop: '10%', color:'white'}}>Kontakt</h5>
             <ul className="list-unstyled">
-              <li><a href="tel:+491775449252">+49 177 544 9252</a></li>
-              <li><a href="mailto:anhtu.nguyen3705@gmail.com">anhtu.nguyen3705@gmail.com</a></li>
+              <li><a href="tel:+491775449252"><FaTablet className='mr-2'/> +49 177 544 9252</a></li>
+              <li><a href="mailto:anhtu.nguyen3705@gmail.com"> <FaMailBulk className='mr-2'/> anhtu.nguyen3705@gmail.com</a></li>
             </ul>
           </Col>
         </Row>

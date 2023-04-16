@@ -17,6 +17,11 @@ body {
 	}
 }
 
+.App{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .title {
   font-size: 5em;
@@ -43,6 +48,10 @@ body {
   flex-direction: column;
 }
 
+footer{
+ margin-top: auto;
+}
+
 h3 {
   padding-top: 0.25em;
 }
@@ -66,10 +75,6 @@ h3 {
   padding: 0.5em 1em;
   border-radius: 5px;
   color: white;
-}
-
-.footer{
-  margin-top: 5%;
 }
 
 .workButton {
