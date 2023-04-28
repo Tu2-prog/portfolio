@@ -9,7 +9,10 @@ export const Contact = () => {
         <>
         <NavBar>
         </NavBar>
-        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto'}}>
+        <div style={{paddingLeft:'35rem', position:'relative', top:'3rem'}}>
+            
+        </div>
+        <div>
             <div className="p-4" style={{width:'30rem'}}>
                 <Card>
                     <Card.Body style={{padding: '4rem'}}>
