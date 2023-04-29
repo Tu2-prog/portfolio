@@ -5,7 +5,7 @@ export const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <a className="navbar-brand" href="/">Mein Portfolio</a>
+        <a className="navbar-brand" href="/">My Portfolio</a>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,13 +20,13 @@ export const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/projects">Projekte</a>
+              <a className="nav-link" href="/projects">Projekts</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/cv">CV</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/contact_me">Kontakt</a>
+              <a className="nav-link" href="/contact_me">Contact</a>
             </li>
           </ul>
         </div>

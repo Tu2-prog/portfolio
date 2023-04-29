@@ -10,6 +10,16 @@ let timelineElements = [
 },
 {
   id: 2,
+  title: "Advanced Practical: clickqt",
+  location: "Heidelberg, Germany",
+  description:
+  "Programming a CLI in Python using click and PyQt6 with a GUI-support.",
+  buttonText: "Company Website",
+  date: "September 2022 - March 2023",
+  icon: "work",
+},
+{
+  id: 3,
   title: "Beginner Practical: Web Crawling of App Store Reviews",
   location: "Heidelberg, Germany",
   description:
@@ -19,7 +29,7 @@ let timelineElements = [
   icon: "work",
 },
 {
-  id: 3,
+  id: 4,
   title: "University Heidelberg",
   location: "Heidelberg, Germany",
   description:
@@ -29,7 +39,7 @@ let timelineElements = [
   icon: "school",
 },
 {
-  id: 4,
+  id: 5,
   title: "Highschool - Elly Heuss Knapp Gymnasium",
   location: "Heilbronn, Germany",
   description:
