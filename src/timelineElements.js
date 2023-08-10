@@ -13,7 +13,7 @@ let timelineElements = [
   title: "Advanced Practical: clickqt",
   location: "Heidelberg, Germany",
   description:
-  "Programming a CLI in Python using click and PyQt6 with a GUI-support.",
+  "Developing a GUI support for CLIs that are written in Python using the frameworks click and PySide6. The goal of this is to support researchers who find it impractical using typical Command Line Interfaces.",
   buttonText: "Company Website",
   date: "September 2022 - March 2023",
   icon: "work",

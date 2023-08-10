@@ -20,7 +20,7 @@ export const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/projects">Projekts</a>
+              <a className="nav-link" href="/projects">Projects</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/cv">CV</a>
