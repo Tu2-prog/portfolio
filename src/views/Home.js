@@ -1,6 +1,8 @@
 import React from "react";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
+import SkillBox from "./components/SkillBox";
+import skills from "../skillset";
 
 export const Home = () => {
   return (
@@ -11,10 +13,10 @@ export const Home = () => {
         <p className="text">
           Hi,<br /> I am Tu. I am an university student in Heidelberg,
           currently aiming for a degree in Computer Science. This is a display
-          of my works during my leisure in order to practice and deepen my
-          skills. <br />
+          of my works from projects during my time at university.<br />
         </p>
         </div>
+        <SkillBox className="box" data={skills}/>
         <Footer/>
     </>
   );

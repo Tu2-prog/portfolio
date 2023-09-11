@@ -28,6 +28,9 @@ export const NavBar = () => {
             <li className="nav-item">
               <a className="nav-link" href="/contact_me">Contact</a>
             </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/skill_set">Skills</a>
+            </li>
           </ul>
         </div>
       </div>
