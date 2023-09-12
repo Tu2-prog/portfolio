@@ -9,11 +9,10 @@ export const Contact = () => {
         <>
         <NavBar>
         </NavBar>
-        <div style={{paddingLeft:'35rem', position:'relative', top:'3rem'}}>
-            
+        <div className="text">
+        If you have any questions concerning my career or my displayed projects then please, contact me using the following contact information:
         </div>
-        <div>
-            <div className="p-4" style={{width:'30rem'}}>
+            <div className="d-flex justify-content-left align-items-center" style={{ paddingTop:"3rem", paddingLeft:"19rem"}}>
                 <Card>
                     <Card.Body style={{padding: '4rem'}}>
                         <Card.Title style={{fontSize:'2.5rem'}}>
@@ -28,7 +27,6 @@ export const Contact = () => {
                     </Card.Body>
                 </Card>
             </div>
-        </div>
         <Footer/>
         </>
     );
