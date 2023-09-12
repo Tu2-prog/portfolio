@@ -4,7 +4,7 @@ import {TimeLine} from "./views/TimeLine";
 import { Home } from "./views/Home";
 import { Contact } from "./views/Contact";
 import { Projects } from "./views/Projects";
-import { SkillBox } from "./views/SkillBox";
+import { SKills } from "./views/Skills";
 
 export default function App(){
   return (
@@ -15,7 +15,7 @@ export default function App(){
         <Route path="cv" element={<TimeLine/>}></Route>
         <Route path="contact_me" element={<Contact/>}></Route>
         <Route path="projects" element={<Projects/>}></Route>
-        <Route path="skill_set" element={<SkillBox/>}></Route>
+        <Route path="skill_set" element={<SKills/>}></Route>
       </Routes>
     </BrowserRouter>
   </div>
