@@ -1,4 +1,4 @@
-import { faHtml5, faCss3, faJs, faReact, faPython, faGithub, faVuejs, faAngular, faGitSquare, faInstagram, faTeamspeak} from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJs, faReact, faPython, faGithub, faVuejs, faAngular, faGitSquare} from '@fortawesome/free-brands-svg-icons';
 
 let skills = [
     {
@@ -46,16 +46,6 @@ let skills = [
         title:"Angular",
         icon:faAngular
     },
-    {
-        id:10,
-        title:"info",
-        icon:faInstagram
-    },
-    {
-        id:11,
-        title:"test",
-        icon:faTeamspeak
-    }
 ]
 
 export default skills;
