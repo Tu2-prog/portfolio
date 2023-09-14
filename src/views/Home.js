@@ -16,7 +16,7 @@ export const Home = () => {
           of my works from projects during my time at university.<br />
         </p>
         </div>
-        <SkillBox className="box" data={skills}/>
+        <SkillBox title="My Tech Stack" data={skills}/>
         <Footer/>
     </>
   );
