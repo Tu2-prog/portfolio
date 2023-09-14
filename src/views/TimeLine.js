@@ -3,7 +3,7 @@ import { ReactComponent as SchoolIcon } from "../school.svg";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 
-import timelineElements from "../timelineElements";
+import timelineElements from "../data/timelineElements";
 
 import {
   VerticalTimeline,

@@ -9,10 +9,7 @@ export const Contact = () => {
         <>
         <NavBar>
         </NavBar>
-        <div className="text">
-        If you have any questions concerning my career or my displayed projects then please, contact me using the following contact information:
-        </div>
-            <div className="d-flex justify-content-left align-items-center" style={{ paddingTop:"3rem", paddingLeft:"19rem"}}>
+            <div className="grid-container" style={{paddingTop:"2rem", paddingLeft:"300px"}}>
                 <Card>
                     <Card.Body style={{padding: '4rem'}}>
                         <Card.Title style={{fontSize:'2.5rem'}}>
@@ -26,6 +23,9 @@ export const Contact = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+            <div>
+                Please feel free to contact me if you have interest in creating a web application with me. I am always available using the Email I provided you here. It is also possible contacting me using the form below for official requests.
+            </div>
             </div>
         <Footer/>
         </>

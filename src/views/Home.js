@@ -2,7 +2,7 @@ import React from "react";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import SkillBox from "./components/SkillBox";
-import skills from "../skillset";
+import skills from "../data/skillset";
 
 export const Home = () => {
   return (

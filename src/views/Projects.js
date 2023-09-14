@@ -2,7 +2,7 @@ import React from "react";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import BasicExample from "./components/Card";
-import productsElements from "../productsElements";
+import productsElements from "../data/productsElements";
 
 export const Projects = () => {
     return (
