@@ -3,6 +3,7 @@ import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import { Card } from "react-bootstrap";
 import {FaUser} from 'react-icons/fa';
+import {ContactUs} from "./components/EmailForm"
 
 export const Contact = () => {
     return (
@@ -27,6 +28,7 @@ export const Contact = () => {
                 Please feel free to contact me if you have interest in creating a web application with me. I am always available using the Email I provided you here. It is also possible contacting me using the form below for official requests.
             </div>
             </div>
+            <ContactUs/>
         <Footer/>
         </>
     );
