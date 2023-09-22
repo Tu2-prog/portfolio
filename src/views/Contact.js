@@ -28,7 +28,9 @@ export const Contact = () => {
                 Please feel free to contact me if you have interest in creating a web application with me. I am always available using the Email I provided you here. It is also possible contacting me using the form below for official requests.
             </div>
             </div>
+            <div className="grid-container">
             <ContactUs/>
+            </div>
         <Footer/>
         </>
     );
