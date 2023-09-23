@@ -1,39 +1,105 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import { FaTablet, FaMailBulk } from 'react-icons/fa';
+import React from "react";
+import styled from "styled-components";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Footer = () => {
   return (
-    <footer className="bg-dark">
-      <Container>
-        <Row>
-          <Col md={6}>
-            <h5 style={{marginTop: '5%', color:'white'}}>About me</h5>
-            <p style={{color:'white'}}>
-                I am a 21 year-old student studying Computer Science at the University of Heidelberg.
-            </p>
-          </Col>
-          <Col md={3}>
-            <h5 style={{marginTop: '10%', color:'white'}}>Links</h5>
-            <ul className="list-unstyled">
-              <li><a href="/">Main</a></li>
-              <li><a href="timeline">Timline</a></li>
-            </ul>
-          </Col>
-          <Col md={3}>
-            <h5 style={{marginTop: '10%', color:'white'}}>Contact</h5>
-            <ul className="list-unstyled">
-              <li><a href="tel:+491775449252"><FaTablet className='mr-2'/> +49 177 544 9252</a></li>
-              <li><a href="mailto:anhtu.nguyen3705@gmail.com"> <FaMailBulk className='mr-2'/> anhtu.nguyen3705@gmail.com</a></li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-      {/* <div className="text-center py-3">
-        &copy; {new Date().getFullYear()} Beispielunternehmen
-      </div> */}
-    </footer>
+    <FooterContainer className="main-footer">
+      <div className="footer-middle">
+        <div classNames="container">
+          <div className="row">
+            <div className="d-flex">
+              <div>
+                <h4>lorem</h4>
+                <ul className="list-unstyled">
+                  <li>
+                    <a href="/"> Lorem ipsum </a>
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4>lorem</h4>
+                <ul className="list-unstyled">
+                  <li>
+                    <a href="/"> Lorem ipsum </a>
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4>lorem</h4>
+                <ul className="list-unstyled">
+                  <li>
+                    <a href="/"> Lorem ipsum </a>
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                  <li>
+                    <a href="/">Lorem ipsum </a>{" "}
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="footer-bottom">
+              <p className="text-xs-center">
+                &copy;{new Date().getFullYear()} All Rights Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </FooterContainer>
   );
 };
 
 export default Footer;
+
+const FooterContainer = styled.footer`
+  .footer-middle {
+    padding-top: 3rem;
+    color: var(--mainWhite);
+  }
+  .footer-bottom {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+  }
+   {
+    ul li a {
+      color: var(--mainGrey);
+      text-decoration: none;
+    }
+  }
+  ul li a:hover {
+    color: var(--mainLightGrey);
+  }
+`;
