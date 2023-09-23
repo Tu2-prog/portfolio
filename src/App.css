@@ -43,16 +43,28 @@ body {
   padding-right: 15%;
 }
 
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding-left: 220px;
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
 }
 
-.grid-item{
-  display: flex;
-  flex-direction: column;
+.grid-item {
+  flex: 0 1 calc(33.33% - 1rem); /* Adjust this value as needed for the desired number of cards per row */
+  margin: 0.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+      flex: 0 1 calc(50% - 1rem); /* Adjust this value for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-item {
+      flex: 1 1 100%; /* Cards take full width on screens less than 480px */
+  }
 }
 
 footer{
