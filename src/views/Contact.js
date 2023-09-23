@@ -3,17 +3,14 @@ import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import { Card } from "react-bootstrap";
 import {FaUser} from 'react-icons/fa';
+import {ContactUs} from "./components/EmailForm"
 
 export const Contact = () => {
     return (
         <>
         <NavBar>
         </NavBar>
-        <div style={{paddingLeft:'35rem', position:'relative', top:'3rem'}}>
-            
-        </div>
-        <div>
-            <div className="p-4" style={{width:'30rem'}}>
+            <div className="grid-container" style={{paddingTop:"2rem", paddingLeft:"300px"}}>
                 <Card>
                     <Card.Body style={{padding: '4rem'}}>
                         <Card.Title style={{fontSize:'2.5rem'}}>
@@ -27,8 +24,13 @@ export const Contact = () => {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+            <div>
+                Please feel free to contact me if you have interest in creating a web application with me. I am always available using the Email I provided you here. It is also possible contacting me using the form below for official requests.
             </div>
-        </div>
+            </div>
+            <div className="grid-container">
+            <ContactUs/>
+            </div>
         <Footer/>
         </>
     );
