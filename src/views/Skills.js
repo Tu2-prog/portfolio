@@ -2,16 +2,23 @@ import React from "react";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import SkillBox from "./components/SkillBox";
-import {webdev, python_dev, general_dev} from "../grouped_skills"
+import {webdev, python_dev, general_dev} from "../data/grouped_skills"
 
 export const SKills = () =>{
+    const categories = [
+        { title: 'Web Development', data: webdev },
+        { title: 'Python Development', data: python_dev },
+        { title: 'General Development', data: general_dev },
+    ];
     return(
         <>
         <NavBar>
         </NavBar>
-        <SkillBox className="box" data={webdev}/>
-        <SkillBox className="box" data={python_dev}/>
-        <SkillBox className="box" data={general_dev}/>
+        {categories.map((category, index) => (
+                <div key={index}>
+                    <SkillBox title={category.title} data={category.data} />
+                </div>
+        ))}
         <Footer/>
         </>
     )

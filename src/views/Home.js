@@ -2,7 +2,7 @@ import React from "react";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
 import SkillBox from "./components/SkillBox";
-import skills from "../skillset";
+import skills from "../data/skillset";
 
 export const Home = () => {
   return (
@@ -16,7 +16,7 @@ export const Home = () => {
           of my works from projects during my time at university.<br />
         </p>
         </div>
-        <SkillBox className="box" data={skills}/>
+        <SkillBox title="My Tech Stack" data={skills}/>
         <Footer/>
     </>
   );

@@ -1,20 +1,8 @@
 body {
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  background: linear-gradient(to right, cyan, red, blue, green, cyan);
+  background-size: 500% 100%; /* Change the size as needed */
+  animation: gradient 15s linear infinite;
+  min-height: 100vh;
 }
 
 .App{
@@ -55,16 +43,28 @@ body {
   padding-right: 15%;
 }
 
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding-left: 220px;
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
 }
 
-.grid-item{
-  display: flex;
-  flex-direction: column;
+.grid-item {
+  flex: 0 1 calc(33.33% - 1rem); /* Adjust this value as needed for the desired number of cards per row */
+  margin: 0.5rem;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+      flex: 0 1 calc(50% - 1rem); /* Adjust this value for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-item {
+      flex: 1 1 100%; /* Cards take full width on screens less than 480px */
+  }
 }
 
 footer{
@@ -110,6 +110,36 @@ h3 {
 
 .schoolButton:hover {
   background-color: #f3bc3c;
+}
+
+.contact-container {
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 1700px) {
