@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import {SERVICE_ID, TEMPLATE_ID, USER_ID} from "../../data/email_data.js"
 
 // appreciation goes to: https://www.emailjs.com/docs/examples/reactjs/ (last access: September 14, 2023 at 5:34 pm.)
 
@@ -9,7 +10,7 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {
