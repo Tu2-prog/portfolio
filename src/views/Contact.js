@@ -10,7 +10,7 @@ export const Contact = () => {
         </NavBar>
             <div className="grid-container">
                 <div className="text-box">
-                If you got hooked on my projects then yout can contact me through this message box here and <br/> I will make an effort in 
+                If you got hooked on my projects then you can contact me through this message box here and <br/> I will make an effort in 
                 replying you back.
                 </div>
             <ContactUs/>
