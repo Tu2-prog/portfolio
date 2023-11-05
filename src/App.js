@@ -5,6 +5,7 @@ import { Home } from "./views/Home";
 import { Contact } from "./views/Contact";
 import { Projects } from "./views/Projects";
 import { SKills } from "./views/Skills";
+import { AppReviewCrawler } from "./views/projects/AppReviewCrawler";
 
 export default function App(){
   return (
@@ -16,6 +17,7 @@ export default function App(){
         <Route path="contact_me" element={<Contact/>}></Route>
         <Route path="projects" element={<Projects/>}></Route>
         <Route path="skill_set" element={<SKills/>}></Route>
+        <Route path="projects/app_review_crawler" element={<AppReviewCrawler/>}></Route>
       </Routes>
     </BrowserRouter>
   </div>
