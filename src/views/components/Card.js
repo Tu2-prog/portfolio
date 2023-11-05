@@ -3,7 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { useNavigate } from "react-router";
 
-function BasicExample(props) {
+function ProjectCard(props) {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -25,4 +25,4 @@ function BasicExample(props) {
   );
 }
 
-export default BasicExample;
+export default ProjectCard;
