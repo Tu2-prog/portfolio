@@ -15,6 +15,7 @@ export const Projects = () => {
                             title={product.title}
                             description={product.description}
                             buttonText={product.buttonText}
+                            buttonLink={product.buttonLink}
                         />
                     </div>
                 ))}

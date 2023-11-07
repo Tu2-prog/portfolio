@@ -6,8 +6,8 @@ import { useNavigate } from "react-router";
 function ProjectCard(props) {
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/projects/app_review_crawler");
+  const handleClick = (route) => {
+    navigate(route);
   }
 
   return (
@@ -17,7 +17,7 @@ function ProjectCard(props) {
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <Card.Text>{props.description}</Card.Text>
-            <Button onClick={handleClick} variant="primary">{props.buttonText}</Button>
+            <Button onClick={() => handleClick(`/projects/${props.buttonLink}`)} variant="primary">{props.buttonText}</Button>
           </Card.Body>
         </Card>
       ))}

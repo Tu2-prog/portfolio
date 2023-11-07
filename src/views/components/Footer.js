@@ -17,7 +17,7 @@ const Footer = () => {
             <h5 style={{marginTop: '10%', color:'white'}}>Links</h5>
             <ul className="list-unstyled">
               <li><a href="/">Main</a></li>
-              <li><a href="timeline">Timline</a></li>
+              <li><a href="timeline">Timeline</a></li>
             </ul>
           </Col>
           <Col md={3}>
