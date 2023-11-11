@@ -22,10 +22,13 @@ export const AppReviewCrawler = () => {
             <div className="text-box">
                 The AppReviewCrawler has to fullfill a certain set of requirements: 
                 <ul>
-                    
+                    <li> Crawling a certain number of reviews of a previously specified app from the Google Play Store. </li>
+                    <li> Filtering of reviews that are not up to date now.</li>
+                    <li> Filtering of unnecessary characters, i.e. emojis or links from the extracted texts. </li>
+                    <li> Allow the scheudling of reoccuring crawling jobs such that the crawling process is automated for the user.</li>
                 </ul>
                 This should ensure that the AppReviewCrawler collects the newest data and automatizes this crawling process in a set amount of time such that the researchers do not have to bother with initiliazing a new crawling job for a dataset. <br/>
-                The 
+                The AppReviewCrawler enables researchers to analyse the user behaviour over the time continously in order to assess the development through the time.
             </div>
             <Footer/>
         </>
