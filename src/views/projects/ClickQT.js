@@ -14,6 +14,12 @@ export const ClickQT = () => {
             <h1>Why ClickQt?</h1>
             Surely, you ask yourself, why one would need this package. The reason for this lies in the varying user acceptance of Command Line Interfaces. There are groups of people who find it cumbersome 
             to use CLIs. This feeling would be later enforced by the complexity of large CLIs, which is why it was requested to provide some kind of graphical support in order to simplify the usage of CLIs.
+            <br/>
+            The package is installable through pip for every operating system, i.e Windows, MacOs or Linux. The package is maintained by the Institute for Scientific Computing of the University of Heidelberg. 
+            The researchers are using this software package to make research by generating GUIs for their own click CLIs.
+            <hr className="solid"/>
+            A detailed description of the project can be found on the following GitHub: <a href="https://github.com/ssciwr/clickqt">clickqt</a>
+
             <Footer/>
         </>
     )
