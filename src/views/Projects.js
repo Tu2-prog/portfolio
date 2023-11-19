@@ -8,6 +8,7 @@ export const Projects = () => {
     return (
         <>
             <NavBar />
+            This is a collection of projects I took part in during my time as university time as part of software practicals/ software labs or privately.
             <div className="grid-container">
                 {productsElements.map((product, index) => (
                     <div key={product.id} className="grid-item p-4">
