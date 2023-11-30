@@ -1,20 +1,21 @@
-# Set the base image to Node.js 14.x
-FROM node:14-alpine
+# pull official base image
+FROM node:latest
 
-# Create and set the working directory
-WORKDIR /app
+# A directory within the virtualized Docker environment
+# Becomes more relevant when using Docker Compose later
+WORKDIR /usr/src/app
 
-# Copy the package.json and package-lock.json files
+# Copies package.json and package-lock.json to Docker environment
 COPY package*.json ./
 
-# Install dependencies
+# Installs all node packages
 RUN npm install
 
-# Copy the rest of the application code
+# Copies everything over to Docker environment
 COPY . .
 
-# Build the React application
-RUN npm run build
+# Uses port which is used by the actual application
+EXPOSE 8080
 
-# Set the command to start the server
+# Finally runs the application
 CMD [ "npm", "start" ]
