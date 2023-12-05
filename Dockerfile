@@ -1,20 +1,18 @@
-# Set the base image to Node.js 14.x
-FROM node:14-alpine
+FROM node:21-alpine3.17
 
-# Create and set the working directory
-WORKDIR /app
-
-# Copy the package.json and package-lock.json files
+WORKDIR /usr/src/app
 COPY package*.json ./
-
-# Install dependencies
 RUN npm install
-
-# Copy the rest of the application code
 COPY . .
 
-# Build the React application
-RUN npm run build
+ARG REACT_APP_MAIL_SERVICE_ID
+ARG REACT_APP_TEMPLATE_ID
+ARG REACT_APP_USER_ID
+ENV REACT_APP_MAIL_SERVICE_ID=${REACT_APP_MAIL_SERVICE_ID}
+ENV REACT_APP_TEMPLATE_ID=${REACT_APP_TEMPLATE_ID}
+ENV REACT_APP_USER_ID=${REACT_APP_USER_ID}
 
-# Set the command to start the server
+EXPOSE 8080
+
+# Finally runs the application
 CMD [ "npm", "start" ]

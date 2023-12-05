@@ -5,6 +5,9 @@ import { Home } from "./views/Home";
 import { Contact } from "./views/Contact";
 import { Projects } from "./views/Projects";
 import { SKills } from "./views/Skills";
+import { AppReviewCrawler } from "./views/projects/AppReviewCrawler";
+import { PersonalProjects } from "./views/projects/PersonalProjects";
+import { ClickQT } from "./views/projects/ClickQT";
 
 export default function App(){
   return (
@@ -16,6 +19,9 @@ export default function App(){
         <Route path="contact_me" element={<Contact/>}></Route>
         <Route path="projects" element={<Projects/>}></Route>
         <Route path="skill_set" element={<SKills/>}></Route>
+        <Route path="projects/app_review_crawler" element={<AppReviewCrawler/>}></Route>
+        <Route path="projects/personal" element={<PersonalProjects/>}></Route>
+        <Route path="projects/clickqt" element={<ClickQT/>}></Route>
       </Routes>
     </BrowserRouter>
   </div>

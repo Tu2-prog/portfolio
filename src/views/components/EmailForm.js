@@ -1,7 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import {SERVICE_ID, TEMPLATE_ID, USER_ID} from "../../data/email_data.js"
-
 // appreciation goes to: https://www.emailjs.com/docs/examples/reactjs/ (last access: September 14, 2023 at 5:34 pm.)
 
 export const ContactUs = () => {
@@ -10,7 +8,7 @@ export const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, USER_ID)
+    emailjs.sendForm(process.env.REACT_APP_MAIL_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_USER_ID)
       .then((result) => {
           console.log(result.text);
       }, (error) => {

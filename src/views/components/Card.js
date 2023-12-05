@@ -1,8 +1,15 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { useNavigate } from "react-router";
 
-function BasicExample(props) {
+function ProjectCard(props) {
+  const navigate = useNavigate();
+
+  const handleClick = (route) => {
+    navigate(route);
+  }
+
   return (
     <div key={props.id} className="p-4" style={{ display: "flex", flexWrap: "wrap", width:'25rem'}}>
       {[...Array(props.numberOfCards)].map((e, i) => (
@@ -10,7 +17,7 @@ function BasicExample(props) {
           <Card.Body>
             <Card.Title>{props.title}</Card.Title>
             <Card.Text>{props.description}</Card.Text>
-            <Button variant="primary">{props.buttonText}</Button>
+            <Button onClick={() => handleClick(`/projects/${props.buttonLink}`)} variant="primary">{props.buttonText}</Button>
           </Card.Body>
         </Card>
       ))}
@@ -18,4 +25,4 @@ function BasicExample(props) {
   );
 }
 
-export default BasicExample;
+export default ProjectCard;
