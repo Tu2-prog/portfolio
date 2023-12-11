@@ -16,6 +16,15 @@ export const PersonalProjects = () => {
             This would also land me a place at the software lab of the Software Engineering department of the University of Heidelberg.
             <h1>Spam Filtering</h1>
             I also recently began developing a web tool that takes different types of machine learning algorithms into account for filtering if a provided email text and email subject is a spam mail or not.
+            <br/>
+            The Frontend for the app is realised using the Angular framework of Google and the Backend of the application is created using the Django framework that contain the trained models for the classification.
+            <br/>
+            The Machine Learning algorithms that were taken into account were:
+            <ol>
+                <li>Naive Bayes</li>
+                <li>Count Vectorizer</li>
+            </ol>
+            Furtheremore, I will dockerize these repositories as microservices realised as Docker containers.
             <Footer/>
         </>
     )
