@@ -12,15 +12,17 @@ export const AppReviewCrawler = () => {
                 The purpose of this tool is to determine how users are communicating about software by making use of text data that is actively collected by FeedUVL.
                 <br/> FeedUVL uses a wide range of algorithms to automatically classify the data in the context of Requirements Engineering.
             </div>
+            <hr className="solid"/>
             <h1 className="title">AppReviewCrawler</h1>
             <div className="text-box">
                 Since the introduction of the Google Play Store and the Apple App Store people are able to talk about and comment on existing apps concerning their Usability, Security, Stability and so on.
                 <br/>
-                This provides a broad range of input that FeedUVL can use to analyse the user behaviour while talking about the usage of software. 
+                This provides a broad range of input that FeedUVL can use to analyse the user behaviour while talking about the usage of software.
             </div>
+            <hr className="solid"/>
             <h1 className="title"> Requirements for the AppReviewCrawler </h1>
             <div className="text-box">
-                The AppReviewCrawler has to fullfill a certain set of requirements: 
+                The AppReviewCrawler has to fullfill a certain set of requirements:
                 <ul>
                     <li> Crawling a certain number of reviews of a previously specified app from the Google Play Store. </li>
                     <li> Filtering of reviews that are not up to date now.</li>
