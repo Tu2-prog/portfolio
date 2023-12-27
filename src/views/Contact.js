@@ -8,13 +8,11 @@ export const Contact = () => {
         <>
         <NavBar>
         </NavBar>
-            <div className="grid-container">
-                <div className="text-box">
-                If you got hooked on my projects then you can contact me through this message box here and <br/> I will make an effort in 
+            <div className="text-box" style={{margin: "auto", width: "50%", padding: "10px"}}>
+                If you got hooked on my projects then you can contact me through this message box here and <br/> I will make an effort in
                 replying you back.
-                </div>
-            <ContactUs/>
             </div>
+            <ContactUs/>
         <Footer/>
         </>
     );
