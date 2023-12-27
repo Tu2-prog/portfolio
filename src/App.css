@@ -17,54 +17,11 @@ body {
   font-family: "Poppins";
 }
 
-.skill-box {
-  text-align: center; /* Center the content horizontally */
-  margin: 0 auto; /* Center the box horizontally within its container */
-  max-width: 800px; /* Adjust the maximum width as needed */
-  padding: 20px; /* Add padding around the box */
-}
-
-.skill-icons {
-  display: flex;
-  flex-wrap: wrap; /* Wrap to the next row when there's not enough space */
-  justify-content: space-around; /* Distribute icons evenly horizontally */
-  align-items: center; /* Center vertically */
-}
-
-.skill-icon {
-  text-align: center;
-  margin: 10px; /* Adjust margin as needed for spacing between icons */
-}
-
 .text{
   font-size: 3em;
   font-family: "Poppins";
   padding-left: 15%;
   padding-right: 15%;
-}
-
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.grid-item {
-  flex: 0 1 calc(33.33% - 1rem); /* Adjust this value as needed for the desired number of cards per row */
-  margin: 0.5rem;
-  box-sizing: border-box;
-}
-
-@media (max-width: 768px) {
-  .grid-item {
-      flex: 0 1 calc(50% - 1rem); /* Adjust this value for smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .grid-item {
-      flex: 1 1 100%; /* Cards take full width on screens less than 480px */
-  }
 }
 
 footer{
@@ -73,80 +30,6 @@ footer{
 
 h3 {
   padding-top: 0.25em;
-}
-
-.vertical-timeline-element-content {
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
-    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
-  padding: 2em 3em !important;
-}
-
-.date {
-  color: rgb(201, 251, 255);
-}
-
-#description {
-  margin: 1.5em 0 2em;
-}
-
-.button {
-  text-decoration: none;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  color: white;
-}
-
-.workButton {
-  background-color: #06d6a0;
-}
-
-.workButton:hover {
-  background-color: #0ac593;
-}
-
-.schoolButton {
-  background-color: #f9c74f;
-}
-
-.schoolButton:hover {
-  background-color: #f3bc3c;
-}
-
-.contact-container {
-  background-color: #f5f5f5;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-@media only screen and (max-width: 1700px) {
-  .vertical-timeline-element-date {
-    display: block !important;
-    float: none !important;
-    color: rgb(44, 44, 44);
-    margin-top: 1.5em;
-  }
 }
 
 .text-box{
@@ -158,24 +41,12 @@ textarea {
   margin-bottom: 20px;
 }
 
-  @media only screen and (min-width: 375px) and (max-width: 768px){
-    .text-box{
-      margin-right: 30px;
-      font-size: 20px;
-      margin-top: 20px;
-      margin-left: 80px;
-      margin-bottom: 20px;
-    }
+@media only screen and (min-width: 375px) and (max-width: 768px){
+  .text-box{
+    margin-right: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-bottom: 20px;
   }
-
-  @media only screen and (max-width: 1700px) {
-    .contact-container{
-      align-content: center;
-      background-color: #f5f5f5;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin: auto;
-      width: 50%;
-      padding: 10px;
-    }
-  }
+}

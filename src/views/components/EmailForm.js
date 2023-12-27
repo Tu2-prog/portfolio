@@ -1,6 +1,8 @@
+import "./static/email.css";
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 // appreciation goes to: https://www.emailjs.com/docs/examples/reactjs/ (last access: September 14, 2023 at 5:34 pm.)
+
 
 export const ContactUs = () => {
   const form = useRef();
