@@ -1,0 +1,18 @@
+.skill-box {
+    text-align: center; /* Center the content horizontally */
+    margin: 0 auto; /* Center the box horizontally within its container */
+    max-width: 800px; /* Adjust the maximum width as needed */
+    padding: 20px; /* Add padding around the box */
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap; /* Wrap to the next row when there's not enough space */
+  justify-content: space-around; /* Distribute icons evenly horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.skill-icon {
+  text-align: center;
+  margin: 10px; /* Adjust margin as needed for spacing between icons */
+}

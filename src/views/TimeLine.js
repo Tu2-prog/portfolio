@@ -2,7 +2,7 @@ import { ReactComponent as WorkIcon } from "../work.svg";
 import { ReactComponent as SchoolIcon } from "../school.svg";
 import { NavBar } from "./components/NavBar";
 import Footer from "./components/Footer";
-
+import "./static/timeline.css"
 import timelineElements from "../data/timelineElements";
 
 import {
