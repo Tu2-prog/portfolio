@@ -113,11 +113,6 @@ h3 {
 }
 
 .contact-container {
-  width: 700px;
-  margin-top: 20px;
-  margin-left: 80px;
-  margin-bottom: 20px;
-  padding: 20px;
   background-color: #f5f5f5;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -178,14 +173,10 @@ textarea {
       align-content: center;
       width:300px;
       background-color: #f5f5f5;
-      margin-right: 30px;
-      margin-top: 30px;
-      margin-bottom: 30px;
       border-radius: 5px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       margin: auto;
       width: 50%;
       padding: 10px;
-      margin-bottom: 10px;
     }
   }
