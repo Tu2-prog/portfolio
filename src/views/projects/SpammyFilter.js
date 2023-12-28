@@ -2,7 +2,7 @@ import React from "react";
 import { NavBar } from "../components/NavBar";
 import Footer from "../components/Footer";
 
-export const PersonalProjects = () => {
+export const SpammyFilter = () => {
     return(
         <>
             <NavBar/>
@@ -10,14 +10,6 @@ export const PersonalProjects = () => {
             <div className="text-box">
             During my time at university I took part in several private coding projects of my colleagues. However, I had to quit the participation after some time in order to concentrate on my studies. <br/>
             After some time has passed I began programming privately for practice and in order to live out my interests.
-            </div>
-            <hr className="solid"/>
-            <h1 className="title">Web Scraping</h1>
-            <div className="text-box">
-            My first real coding project project was a dive into Web Scraping due to my interest in Data Science. Therefore I intended to find a way to collect data for my analysis without depending on external resources at first. That is why I
-            began researching on Web Scraping with the usage of Python. My first web scraper is a web scraper getting data from my favourite manga website and puts them in relational database.
-            <br/>
-            This would also land me a place at the software lab of the Software Engineering department of the University of Heidelberg.
             </div>
             <hr className="solid"/>
             <h1 className="title">Spam Filtering</h1>
@@ -32,7 +24,6 @@ export const PersonalProjects = () => {
                 <li>Count Vectorizer</li>
             </ol>
             Furthermore, I will dockerize these repositories as microservices realised as Docker containers.
-            These projects can be inspected seperately as well.
             </div>
             <Footer/>
         </>

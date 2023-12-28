@@ -8,6 +8,7 @@ import { SKills } from "./views/Skills";
 import { AppReviewCrawler } from "./views/projects/AppReviewCrawler";
 import { PersonalProjects } from "./views/projects/PersonalProjects";
 import { ClickQT } from "./views/projects/ClickQT";
+import { SpammyFilter } from "./views/projects/SpammyFilter";
 
 export default function App(){
   return (
@@ -22,6 +23,7 @@ export default function App(){
         <Route path="projects/app_review_crawler" element={<AppReviewCrawler/>}></Route>
         <Route path="projects/personal" element={<PersonalProjects/>}></Route>
         <Route path="projects/clickqt" element={<ClickQT/>}></Route>
+        <Route path="projects/spammy" element={<SpammyFilter/>}></Route>
       </Routes>
     </BrowserRouter>
   </div>

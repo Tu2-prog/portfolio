@@ -23,6 +23,14 @@ let productsElements = [
   buttonText: "View clickqt",
   buttonLink: "clickqt"
 },
+{
+  id: 4,
+  title: "Spam Mail Classification",
+  description:
+  "In my last year of university I created a simple Fullstack application to classify entered email texts as spam mails or not.",
+  buttonText: "View Spammy Filter",
+  buttonLink: "spammy"
+}
 ];
 
 export default productsElements;
