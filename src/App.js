@@ -9,6 +9,7 @@ import { AppReviewCrawler } from "./views/projects/AppReviewCrawler";
 import { PersonalProjects } from "./views/projects/PersonalProjects";
 import { ClickQT } from "./views/projects/ClickQT";
 import { SpammyFilter } from "./views/projects/SpammyFilter";
+import { Evoter } from "./views/projects/VotingApp";
 
 export default function App(){
   return (
@@ -24,6 +25,7 @@ export default function App(){
         <Route path="projects/personal" element={<PersonalProjects/>}></Route>
         <Route path="projects/clickqt" element={<ClickQT/>}></Route>
         <Route path="projects/spammy" element={<SpammyFilter/>}></Route>
+        <Route path="projects/evoter" element={<Evoter/>}></Route>
       </Routes>
     </BrowserRouter>
   </div>
